@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "app-publishing", "..\app-publishing\app-publishing.deployproj", "{5520F151-98FF-474B-91E1-2F8915569007}"
 EndProject
-Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "hybrid-backup", "..\hybrid-backup\hybrid-backup.deployproj", "{44FB5BF1-62DD-4099-B9BC-F9A7CEDA231E}"
-EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "hybrid-datacenter", "..\hybrid-datacenter\hybrid-datacenter.deployproj", "{EFE3F649-A1F1-4490-95E4-ABAB1105D45B}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{5520F151-98FF-474B-91E1-2F8915569007}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5520F151-98FF-474B-91E1-2F8915569007}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5520F151-98FF-474B-91E1-2F8915569007}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44FB5BF1-62DD-4099-B9BC-F9A7CEDA231E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44FB5BF1-62DD-4099-B9BC-F9A7CEDA231E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44FB5BF1-62DD-4099-B9BC-F9A7CEDA231E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44FB5BF1-62DD-4099-B9BC-F9A7CEDA231E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EFE3F649-A1F1-4490-95E4-ABAB1105D45B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EFE3F649-A1F1-4490-95E4-ABAB1105D45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFE3F649-A1F1-4490-95E4-ABAB1105D45B}.Release|Any CPU.ActiveCfg = Release|Any CPU

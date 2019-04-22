@@ -31,5 +31,8 @@
     <Content Include="Deploy-AzureResourceGroup.ps1" />
     <Content Include="README.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Artifacts\" />
+  </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>

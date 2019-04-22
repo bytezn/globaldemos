@@ -3,10 +3,19 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "gwdnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
+      "value": "gendep"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "Master123456"
+    },
+    "adDomainName": {
+      "value": "law.com"
+    },
+    "adminUsername": {
+      "value": "lawrance"
+    },
+    "numberOfRdshInstances": {
+      "value": 2
     }
   }
 }
