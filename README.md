@@ -1,2 +1,0 @@
-# globaldemos
-Demos for globalbootcamp

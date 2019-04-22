@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AdventureWorksModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="AdventureWorksEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="AdventureWorksModel.Product" />
+  </EntityContainer>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Type="Int32" Name="ProductID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductNumber" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Color" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="StandardCost" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="ListPrice" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="Size" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Weight" Precision="8" Scale="2" />
+    <Property Type="Int32" Name="ProductCategoryID" />
+    <Property Type="Int32" Name="ProductModelID" />
+    <Property Type="DateTime" Name="SellStartDate" Nullable="false" />
+    <Property Type="DateTime" Name="SellEndDate" />
+    <Property Type="DateTime" Name="DiscontinuedDate" />
+    <Property Type="Binary" Name="ThumbNailPhoto" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="ThumbnailPhotoFileName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="rowguid" Nullable="false" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+  </EntityType>
+</Schema>
