@@ -1,0 +1,4 @@
+#Moodleagb
+server=10.3.191.45;password=Master123;user id=agbadmin;port=3306;database=moodleagb
+user - agbadmin
+password - Master123

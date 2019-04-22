@@ -1,0 +1,9 @@
+
+#docker registry
+registry - bootcampacr.azurecr.io
+username - bootcampacr
+password - b=iiN6o3rvWJqcE=4MCBmdShwI3nrdOk
+
+#Images
+bootcampacr.azurecr.io/druplal
+bootcampacr.azurecr.io/mysql:5.6

@@ -1,0 +1,17 @@
+kubectl get nodes
+kubectl get pods
+kubectl get service 
+kubectl describe nodes
+
+kubectl cluster-info
+kubectl cluster-info dump
+
+kubectl describe deployments
+kubectl get pvc
+
+az aks get-credentials --resource-group globalbootcamp --name aksazure
+az aks browse --resource-group globalbootcamp --name aksazure
+
+kubectl create secret generic mssql --from-literal=SA_PASSWORD=Master123456
+
+kubectl create secret docker-registry regcred --docker-server=bootcampacr.azurecr.io --docker-username=bootcampacr --docker-password=b=iiN6o3rvWJqcE=4MCBmdShwI3nrdOk --docker-email=bytezn@hotmail.com

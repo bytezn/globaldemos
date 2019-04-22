@@ -1,0 +1,61 @@
+
+#MySQL
+ kubectl create -f https://k8s.io/examples/application/mysql/mysql-pv.yaml
+ kubectl create -f mysql.yaml
+ #kubectl create -f https://k8s.io/examples/application/mysql/mysql-deployment.yaml
+
+
+#Microsoft SQL Server
+ kubectl create secret generic mssql --from-literal=SA_PASSWORD=Master123456
+ kubectl create -f mssqlserver-pv.yaml
+ kubectl create -f mssqlserver.yaml
+
+#Moodle
+ helm install stable/moodle --version 0.1.2
+ kubectl get svc --namespace default -w my-release
+ helm del --purge my-release
+ kubectl get svc --namespace default my-release-moodle --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}"
+ 
+#Stateful & Container Demos
+  kubectl apply -f web.yaml
+  kubectl get pods -w -l app=nginx
+  kubectl run -i --tty --image busybox:1.28 dns-test --restart=Never --rm
+ nslookup web-0.nginx
+
+  kubectl get pod -w -l app=nginx
+  kubectl delete pod -l app=nginx
+
+ #Verify Persistence
+  kubectl exec web-0 -- sh -c 'echo $(hostname) > /usr/share/nginx/html/index.html'
+  kubectl exec -it web-0 -- curl localhost;
+  kubectl exec web-1 -- sh -c 'echo $(hostname) > /usr/share/nginx/html/index.html'
+  kubectl exec -it web-1 -- curl localhost;
+  kubectl exec web-0 -- chmod 755 /usr/share/nginx/html;
+  kubectl exec web-1 -- chmod 755 /usr/share/nginx/html;
+
+ #Delete pod
+  kubectl get pod -w -l app=nginx
+  kubectl delete pod -l app=nginx
+  
+  kubectl exec -it web-0 -- curl localhost;
+  kubectl exec -it web-1 -- curl localhost;
+ 
+ #Scale Set
+  kubectl scale sts web --replicas=5
+  kubectl scale sts web --replicas=2
+ 
+ #Rolling Update
+  kubectl patch statefulset web -p '{"spec":{"updateStrategy":{"type":"RollingUpdate"}}}
+  kubectl patch statefulset web --type='json' -p='[{"op": "replace", "path": "/spec/template/spec/containers/0/image", "value":"gcr.io/google_containers/nginx-slim:0.8"}]'
+  kubectl get po -l app=nginx -w
+  kubectl get po web-$p --template '{{range $i, $c := .spec.containers}}{{$c.image}}{{end}}'; echo;
+
+ #Delete deployment
+  kubectl delete statefulset web
+  kubectl delete service nginx
+
+
+
+
+
+
