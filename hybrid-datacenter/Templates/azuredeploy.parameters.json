@@ -22,6 +22,9 @@
       },
       "fileserver2Name": {
         "value": "myfs"
+      },
+      "adminPassword": {
+        "value": "Master123456"
       }
     }
 }

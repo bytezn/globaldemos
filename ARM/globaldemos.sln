@@ -28,6 +28,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebVMSampleSite", "..\WebVM
 		SlnRelativePath = "..\WebVMSampleSite\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsistentDemoApp", "ConsistentDemoApp\ConsistentDemoApp.csproj", "{96B8F2F7-5612-4EC1-A71B-39F2D4552A50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{50B40B15-7D44-4BFB-B29D-5582116C176A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50B40B15-7D44-4BFB-B29D-5582116C176A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{50B40B15-7D44-4BFB-B29D-5582116C176A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{96B8F2F7-5612-4EC1-A71B-39F2D4552A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B8F2F7-5612-4EC1-A71B-39F2D4552A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B8F2F7-5612-4EC1-A71B-39F2D4552A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B8F2F7-5612-4EC1-A71B-39F2D4552A50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

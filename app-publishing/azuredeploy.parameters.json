@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "gwdnsLabelPrefix": {
-      "value": "gendep"
+      "value": "agbrds01"
     },
     "adminPassword": {
       "value": "Master123456"
@@ -16,6 +16,12 @@
     },
     "numberOfRdshInstances": {
       "value": 2
+    },
+    "rdshVmSize": {
+      "value": "Standard_DS_V3"
+    },
+    "gwpublicIPAddressName": {
+      "value": "gwpip2"
     }
   }
 }
